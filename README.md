@@ -39,3 +39,7 @@ To use any of the above, you'll need to insert the following and change `newsoci
 	content: "\e0xx";
 }
 ```
+
+#### No Sidebar
+
+The `style.css` contains the snippet to remove sidebar from all the pages (`line 16 -30`). You may comment it out or remove if you need sidebar enabled.
