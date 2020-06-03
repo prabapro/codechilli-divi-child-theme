@@ -1,9 +1,9 @@
 ## About this Child Theme
 This is a child theme produced by the Elegant Market Place child theme maker. It is solely produced to work with the Divi theme by Elegant Themes.
 
-#### In this version:
+#### v1.0. Social Icons:
 
-additional Social Icons for the header and footer can be optionally added to the four icons now controlled by the Divi theme. These additional icons are controlled within the Theme Customizer and `Divi Theme Options > General` in WP Admin.
+Additional Social Icons for the header and footer can be optionally added to the four icons now controlled by the Divi theme. These additional icons are controlled within the Theme Customizer and `Divi Theme Options > General` in WP Admin.
 
 To add addtional Social Icons to those offered in this child theme, the `includes/social_icons.php` can be edited by inserting additional code to that now appearing in this file. As an example, insert the following at a location of your choosing.
 
@@ -40,6 +40,12 @@ To use any of the above, you'll need to insert the following and change `newsoci
 }
 ```
 
-#### No Sidebar
+#### v1.1. No Sidebar
 
 The `style.css` contains the snippet to remove sidebar from all the pages (`line 16 -30`). You may comment it out or remove if you need sidebar enabled.
+
+#### v1.2. Removed "Enter coupon" prompt.
+
+"Enter Coupon" prompt will be removed from the Woocommerce check out page if the coupon is already been applied.
+
+To disable this feature, remove/uncomment `lines 163-176` from `functions.php` file.

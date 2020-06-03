@@ -160,4 +160,19 @@ function my_added_social_icons($kkoptions) {
 }
 add_filter('et_epanel_layout_data', 'my_added_social_icons', 99);
 
+/**
+* WooCommerce: Hide 'Coupon form' on checkout page if a coupon was already applied in the cart
+* Add to theme functions.php file or Code Snippets plugin
+*/
+
+add_filter( 'woocommerce_coupons_enabled', 'woocommerce_coupons_enabled_checkout' );
+
+function woocommerce_coupons_enabled_checkout( $coupons_enabled ) {
+    global $woocommerce;
+    if ( ! empty( $woocommerce->cart->applied_coupons ) ) {
+        return false;
+    }
+    return $coupons_enabled;
+}
+
 ?>
