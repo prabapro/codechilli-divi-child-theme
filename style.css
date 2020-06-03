@@ -28,3 +28,35 @@
 	width: 100%;
 	padding-right: 0px !important;
 }}
+
+/* Footer vertical menu */
+.et_pb_menu--without-logo .et_pb_menu__menu>nav>ul {
+	display:inline-block;
+}
+
+/* Coupon Field */
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+    width: auto;
+    height: 46px;
+    border-radius: 0;
+    text-align: center;
+	color:#000 !important;
+	font-weight:bold !important;
+	text-transform:uppercase !important;
+}
+/* Quantity Field */
+.woocommerce-page .quantity input.qty, .woocommerce .quantity input.qty {
+	color: #333!important;
+    border-radius: 0;
+	height:46px;
+}
+/* Update Cart Button - Adjust Height*/
+.woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled]{
+	padding: 6px 20px;
+	color:#fff;
+}
+
+/* Woocommerce Message Banner Link Color*/
+.woocommerce-message a{
+	color:#000;
+}

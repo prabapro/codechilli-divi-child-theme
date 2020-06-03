@@ -44,8 +44,12 @@ To use any of the above, you'll need to insert the following and change `newsoci
 
 The `style.css` contains the snippet to remove sidebar from all the pages (`line 16 -30`). You may comment it out or remove if you need sidebar enabled.
 
-#### v1.2. Removed "Enter coupon" prompt.
+#### v1.2. Removed "Enter coupon" prompt
 
 "Enter Coupon" prompt will be removed from the Woocommerce check out page if the coupon is already been applied.
 
 To disable this feature, remove/uncomment `lines 163-176` from `functions.php` file.
+
+#### v1.3. Woocommerce CSS Fixes
+
+Adjusted few Woocommerce elements (i,e, Buttons, Coupon field height etc) to go with the theme.
